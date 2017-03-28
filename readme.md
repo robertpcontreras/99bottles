@@ -20,10 +20,43 @@ $lyrics .= "No more bottles of beer on the wall, no more bottles of beer.\nGo to
 echo $lyrics;
 ```
 
-But this good exercise to demonstrate use of OO design and practices as well as the ability to write basic tests to test the solution.
+But this good exercise to demonstrate basic use of OO design principles and practices as well as the ability to write basic tests to test the solution.
 
 ## Installation steps
 
+Clone the repo
+```bash
+git clone https://github.com/robertpcontreras/99bottles.git && cd 99bottles
+```
 
+Install composer dependencies
+```bash
+composer install
+```
 
+Create the .env file
+```bash
+cp .env.example .env
+```
 
+Generate the application key
+```bash
+php artisan key:generate
+```
+
+Install NPM dependencies
+```bash
+npm install
+```
+
+Compile Javascript
+```bash
+npm run production
+```
+
+Run the site using php's built in web server
+```bash
+php artisan serve
+```
+
+The application will be running on `http://localhost:8000`
